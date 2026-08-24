@@ -1,0 +1,17 @@
+# Servidor MCP
+fastmcp>=2.0.0,<3.0.0
+
+# Orquestração e modelo de chat
+langchain>=0.3.0,<1.0.0
+langchain-openai>=0.2.0,<1.0.0
+langgraph>=0.2.0,<1.0.0
+
+# Indexação, embeddings e banco vetorial
+llama-index>=0.12.0,<1.0.0
+llama-index-vector-stores-chroma>=0.4.0,<1.0.0
+llama-index-embeddings-openai>=0.3.0,<1.0.0
+chromadb>=0.5.0,<1.0.0
+
+# Configuração e leitura de PDFs
+pydantic-settings>=2.0.0,<3.0.0
+pypdf>=5.0.0,<6.0.0

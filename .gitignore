@@ -1,0 +1,11 @@
+# Segredos e configuração local
+.env
+
+# Ambientes e artefatos Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Dados locais opcionais
+/data/

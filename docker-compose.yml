@@ -1,0 +1,20 @@
+services:
+  mcp-rag:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mcp-rag
+    env_file:
+      - .env
+    ports:
+      # Endpoint MCP via Server-Sent Events.
+      - "8000:8000"
+    volumes:
+      # Mantém o índice ChromaDB após recriações do contêiner.
+      - rag_data:/data
+      # Descomente para disponibilizar documentos locais, em modo somente leitura.
+      # - ./docs:/workspace/docs:ro
+    restart: unless-stopped
+
+volumes:
+  rag_data:
