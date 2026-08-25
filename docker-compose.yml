@@ -12,8 +12,8 @@ services:
     volumes:
       # Mantém o índice ChromaDB após recriações do contêiner.
       - rag_data:/data
-      # Descomente para disponibilizar documentos locais, em modo somente leitura.
-      # - ./docs:/workspace/docs:ro
+      # Disponibiliza documentos locais, em modo somente leitura (pdf, md e txt).
+      - ./docs:/workspace/docs:ro
     restart: unless-stopped
 
 volumes:

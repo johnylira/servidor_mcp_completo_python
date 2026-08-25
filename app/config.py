@@ -20,7 +20,6 @@ class Settings(BaseSettings):
     rag_chunk_size: int = 700
     rag_chunk_overlap: int = 80
 
-
 @lru_cache
 def get_settings() -> Settings:
     """Retorna uma única instância de configurações e cria o diretório de dados."""
